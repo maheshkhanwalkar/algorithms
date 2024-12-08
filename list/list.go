@@ -22,6 +22,11 @@ func NewLinkedList[T any]() *LinkedList[T] {
 // Running time: O(1)
 func (list *LinkedList[T]) AddFront(elem T) {
 	node := &LinkedListNode[T]{elem: elem, next: list.head}
+
+	if list.head == nil {
+		list.tail = node
+	}
+
 	list.head = node
 	list.size++
 }
