@@ -1,13 +1,12 @@
-package oop_test
+package oop
 
 import (
-	"algorithms/oop"
 	"testing"
 )
 
 func TestPlus(t *testing.T) {
-	a := oop.Rational{Numerator: 1, Denominator: 2}
-	b := oop.Rational{Numerator: 2, Denominator: 6}
+	a := Rational{Numerator: 1, Denominator: 2}
+	b := Rational{Numerator: 2, Denominator: 6}
 
 	res := a.Plus(b)
 
@@ -17,8 +16,8 @@ func TestPlus(t *testing.T) {
 }
 
 func TestMinus(t *testing.T) {
-	a := oop.Rational{Numerator: 1, Denominator: 2}
-	b := oop.Rational{Numerator: 1, Denominator: 3}
+	a := Rational{Numerator: 1, Denominator: 2}
+	b := Rational{Numerator: 1, Denominator: 3}
 
 	res := a.Minus(b)
 
@@ -28,8 +27,8 @@ func TestMinus(t *testing.T) {
 }
 
 func TestMultiply(t *testing.T) {
-	a := oop.Rational{Numerator: 3, Denominator: 2}
-	b := oop.Rational{Numerator: 2, Denominator: 9}
+	a := Rational{Numerator: 3, Denominator: 2}
+	b := Rational{Numerator: 2, Denominator: 9}
 
 	res := a.Multiply(b)
 
@@ -39,8 +38,8 @@ func TestMultiply(t *testing.T) {
 }
 
 func TestDivide(t *testing.T) {
-	a := oop.Rational{Numerator: 3, Denominator: 2}
-	b := oop.Rational{Numerator: 1, Denominator: 3}
+	a := Rational{Numerator: 3, Denominator: 2}
+	b := Rational{Numerator: 1, Denominator: 3}
 
 	res := a.Divide(b)
 
